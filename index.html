@@ -9,11 +9,11 @@
   </head>
   <body>
     <header>
-        <h1>Meeting Title: Welcome!</h1>
+        <h1><b>Meeting Title: Welcome!</b></h1>
         <h2>Meeting Topic: Team Kickoff</h2>
-        <h2>Meeting Date: 4/10/2024</h2>
+        <h2>Meeting Date: <input type="date"></h2>
     </header>
-    
+    <hr>
     <nav>
         <h3>
             <ul>
@@ -27,57 +27,180 @@
         </h3>
         
     </nav>
-
+    <hr>
     <main id="main">
-        <h2>Attendance List</h2>
+        <h2><strong>Attendance List</strong></h2>
         <span>
             <h3>Present</h3>
             <ul>
-                <li><input type="checkbox">Altair</li>
-                <li>Bea</li>
-                <li>Ashton</li>
-                <li>Jason</li>
-                <li>Gavin</li>
+                <li><i>Altair</i></li>
+                <li><i>Bea</i></li>
+                <li><i>Ashton</i></li>
+                <li><i>Jason</i></li>
+                <li><i>Gavin</i></li>
+                
             </ul>
         </span>
         <div>
             <h3>Absent</h3>
             <ul>
-                <li>Tony</li>
-                <li>Justin</li>
-                <li>Lucas</li>
+                <li><em>Tony</em></li>
+                <li><em>Justin</em></li>
+                <li><em>Lucas</em></li>
             </ul>
         </div>
-        
+        <hr>
         <section id="agenda">
             <h2>Agenda</h2>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam temporibus exercitationem totam similique accusantium repellendus saepe, quidem alias, reiciendis, corporis perferendis ipsam nam molestiae architecto neque itaque mollitia officia eaque.
+            <ol>
+                <li>
+                    <h3>Meeting Kickoff</h3>
+                    <p>Having our first serious meeting.</p>
+                    <ul>
+                        <li><input type="checkbox">
+                           Define Roles 
+                        </li>
+                        <li><input type="checkbox">
+                           Rules of Development
+                        </li>
+                        <li><input type="checkbox">
+                           Team Contract 
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Branding, Group Page & Video</h3>
+                    <p>Deciding our group branding, updating our group page, and creating our group intro.</p>
+                    <ul>
+                        <li><input type="checkbox">
+                            Team Brand
+                        </li>
+                        <li><input type="checkbox">
+                            Team Page
+                        </li>
+                        <li><input type="checkbox">
+                            Team Intro Video
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Group Bonding</h3>
+                    <p>Having fun with our group!</p>
+                    <ul>
+                        <li><input type="checkbox">
+                            Group Activity
+                        </li>
+                    </ul>
+                </li>
+            </ol>
         </section>
-
+        <hr>
         <section id="unfinished">
             <h2>Unfinished Business</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veniam voluptas fugit error velit recusandae exercitationem, nemo eos sint delectus a laborum provident itaque atque commodi dolor. A, quos odit.
+            <ul>
+                <li>
+                    <h3>Meetup with team for the first time</h3>
+                </li>
+            </ul>
+            Right now we don't have a lot of unfinished business because <br> 
+            project just started, but for future reference this area could be longer. (Hopefully not)
         </section>
-
+        <hr>
         <section id="new">
             <h2>New Business</h2>
+            <ul>
+                <li>
+                    <h3>Start thinking about flow and team logistics</h3>
+                </li>
+            </ul>
         </section>
-
+        <hr>
         <section id="miscellaneous">
-            <h2>Miscellaneous/Quesions/Comments</h2>
+            <h2>Miscellaneous/Questions/Comments</h2>
+            <ul>
+                <li>When will weekly meetings be scheduled?</li>
+                <li>Who are our group leads?</li>
+                <li>How and when do we assign/choose roles?</li>
+            </ul>
         </section>
-
+        <hr>
         <section id="pictures">
             <h2>Pictures</h2>
+            <details>
+                <summary>
+                    Click to Expand Note
+                </summary>
+                <p>These are just examples since we haven't had an actual meeting.</p>
+            </details>
+            <h3>Diagram 1</h3>
+            <img src="meetingimg1.png" alt="example img 1" width="400" height="350" title="Example 1">
+            <h3>Diagram 2</h3>
+            <img src="whiteboard-diagram.jpg" alt="example img 2">
         </section>
-
+        <hr>
         <section id="audio/video">
             <h2>Audio and Video Recordings</h2>
+            <details>
+                <summary>
+                    Click to Expand Note
+                </summary>
+                <p>These are just examples since we haven't had an actual meeting.</p>
+            </details>
+            <h3>Audio Recording of Meeting</h3>
+            <audio controls src="weekly_meeting_audio.mp3"></audio>
+            <h3>Video Recording of Meeting</h3>
+            <video controls width="400" src="Weekly_meeting_example.mp4"></video>
         </section>
+        <hr>
     </main>
 
     <footer>
+        <form>
+            <fieldset>
+                <h3>Rate our Page</h3>
+                <label for="1">Rating: 1</label>
+                <input type="radio" name="1" id="1">
+                <label for="">2</label>
+                <input type="radio" name="2" id="2">
+                <label for="">3</label>
+                <input type="radio" name="3" id="3">
+                <label for="">4</label>
+                <input type="radio" name="4" id="4">
+                <label for="">5</label>
+                <input type="radio" name="5" id="5">
+                <br>
+                    <label for="datalist">Do you like our page?</label>
+                    <input type="text" name="datalist" id="datalist" list="ratingList">
+                    <datalist id="ratingList">
+                        <option>Yes</option> 
+                        <option>Super yes!</option>
+                    </datalist>
+                </br>
+                <br> 
+                    <label for="sure">Are you sure?</label>
+                    <select name="sure" id="sure">
+                        <option>Yes</option>
+                        <option>Super yes!</option>
+                    </select>
+                </br>
+                
+            </fieldset>
+            <fieldset>
+                <h3>Comment Section</h3>
+                <h4>Add a Comment!</h4>
+                <textarea name="Comment Section" id="" cols="30" rows="10"></textarea>
+                <button>Post</button>
+            </fieldset>
+            <fieldset>
+                <label for="questions">Any questions? Contact us here:</label>
+                <input type="text" name="questions" id="questions" placeholder="Type here!">
+            </fieldset>
+            <fieldset>
+                <label for="suggestions">Have suggestions? Let us know here:</label>
+                <input type="text" name="suggestions" id="suggestions" placeholder="Type here!">
+            </fieldset>
 
+        </form>
     </footer>
   </body>
 </html>

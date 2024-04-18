@@ -1,34 +1,35 @@
-[Project Name] Stand-Up Meeting - [Date]
+# [Project Name] Stand-Up Meeting - [Date]
 
-Time: [Insert Time]
-Location: [Insert Location or Video Conference Link]
+## Time: [Insert Time]
+## Location: [Insert Location or Video Conference Link]
 
-Attendees:
+## Attendees:
 
-[List of Team Members]
-Agenda:
+## [List of Team Members]:
 
-Brief updates from each team member.
-Identification of any blockers or impediments.
-Coordination of tasks for the day.
-Meeting Facilitator: [Insert Facilitator's Name]
+## Agenda:
 
-Stand-Up Meeting Agenda:
+- Brief updates from each team member.
+- Identification of any blockers or impediments.
+- Coordination of tasks for the day.
+- Meeting Facilitator: [Insert Facilitator's Name]
 
-1. Individual Updates:
+## Stand-Up Meeting Agenda:
 
-What did you accomplish yesterday?
-What will you do today?
-Do you have any obstacles or blockers?
-2. Team Coordination:
+### 1. Individual Updates:
 
-Identify any dependencies or areas where collaboration is needed.
-Discuss any changes to priorities or deadlines.
-3. Addressing Blockers:
+- What did you accomplish yesterday?
+- What will you do today?
+- Do you have any obstacles or blockers?
+### 2. Team Coordination:
 
-If any team member has encountered a blocker, discuss how to resolve it or escalate it for assistance.
-Ensure that everyone has the support they need to make progress.
-4. Closing:
+- Identify any dependencies or areas where collaboration is needed.
+- Discuss any changes to priorities or deadlines.
+### 3. Addressing Blockers:
 
-Confirm any action items or tasks assigned during the meeting.
-Recap any important decisions or announcements.
+- If any team member has encountered a blocker, discuss how to resolve it or escalate it for assistance.
+- Ensure that everyone has the support they need to make progress.
+### 4. Closing:
+
+- Confirm any action items or tasks assigned during the meeting.
+- Recap any important decisions or announcements.

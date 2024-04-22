@@ -1,0 +1,234 @@
+/*adding a font*/
+.mukta-extralight {
+  font-family: "Mukta", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.mukta-light {
+  font-family: "Mukta", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.mukta-regular {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mukta-medium {
+  font-family: "Mukta", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.mukta-semibold {
+  font-family: "Mukta", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.mukta-bold {
+  font-family: "Mukta", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.mukta-extrabold {
+  font-family: "Mukta", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+
+main * {
+    font-family: "Mukta";
+}
+
+/*changing subtitles to red*/
+h2{
+    color: rgb(255, 0 , 0);
+}
+
+#present{
+    color: hsl(120, 100%, 50%);
+    background-color: black;
+    display: inline-block;
+    padding: 10px;
+}
+
+#absent{
+    color: color(srgb 255 189 0);
+    background-color: black;
+}
+
+/*color mixing the first subtitle*/
+#sub1{
+    color: color-mix(in srgb, red 25%, white 75%);
+}
+
+:root{
+    --pink: pink;
+}
+
+/*making the second subtitle pink using var, with fallback*/
+#sub2{
+    color: var(--pink, pink);
+}
+
+#attendanceList{
+    margin: auto;
+}
+
+/*customize nav list*/
+#nav{
+    background-color: beige;
+    /*long margin section*/
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    /*long padding section*/
+    padding-top: 1px ;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    
+    /*long border section*/
+    border-style: solid;
+    border-color: green;
+    border-width: 10px;
+    border-radius: 20mm;
+}
+
+/*customize header*/
+#header{
+    /*short margin section*/
+    margin: 1em 5em 1em 5em;
+    /*short padding section*/
+    padding: 1px 20px 1px 20px;
+    /*short border section*/
+    border: 1cm ridge green;
+    border-radius: 0.5cm;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#toHide{
+display: none;
+}
+
+#agenda{    
+    background-color: azure;
+    display: block;
+}
+
+#agendaHeading{
+    display: inline;
+    background-color: yellow;
+}
+
+#unfinished{
+    display: inline-block;
+    background-color: yellow;
+}
+
+/*make first picture slightly smaller*/
+#pic1{
+    height: 300px;
+    width: 350px;
+    max-width: 350px;
+    min-width: 300px;
+    position: static;
+}
+
+/*make second pic move with browser*/
+#pic2{
+    height: auto;
+    width: auto;
+    position: relative;
+}
+
+#lilLogo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#goose{
+    /*make the goose stretch
+      with viewport lol
+    */
+    height: 7vh;
+    width: 5vw;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#guy{
+    height: 60px;
+    width: 50px;
+    position: sticky;
+    top: 0px;
+    left: 700px;
+    float: right;
+    margin-right: 50px;
+}
+
+button:hover{
+    background-color: green;
+}
+
+button:active{
+    transform: scale(0.5);
+}
+
+#picturePictures{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.label{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+.picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*make adjustments for smaller viewports*/
+@media (max-width: 480px) {
+    .picture{
+        width: 50%;
+    }
+    .footer{
+        width: 90%;
+        padding: 40px;
+        font-size: 1.2em;
+    }
+}
+
+.grid{
+    width: 100%;
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.item{
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}

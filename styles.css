@@ -50,6 +50,7 @@ main * {
 /*changing subtitles to red*/
 h2{
     color: rgb(255, 0 , 0);
+
 }
 
 #present{
@@ -231,4 +232,48 @@ button:active{
     background-color: lightblue;
     padding: 20px;
     text-align: center;
+}
+/*everything below is making sure i used
+at least one of each css selector*/
+/*styling input text*/
+input[type=text] {
+    border: 2px solid rgb(12, 119, 12);
+    padding: 5px;
+}
+
+/*add pseudo-class selector and selector list*/
+img:hover, audio:hover, video:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+    border: 2px solid blue;
+}
+
+ul li{
+    font-style: italic;
+}
+
+ol > li {
+    text-decoration: underline;
+}
+
+h3 ~ label {
+    color: blue;
+}
+
+h3 + h4 {
+    color: green;
+}
+
+div span.label{
+    color: green;
+}
+
+p:has(a){
+    color: green;
+}
+
+#miscellaneous{
+    & h2{
+        color: purple;
+    }
 }
